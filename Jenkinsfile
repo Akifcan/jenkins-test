@@ -17,12 +17,6 @@ pipeline {
         bat 'npm install'
       }
     }
-     
-    stage('Run') {
-      steps {
-         bat 'npm run start'
-      }
-    }
     
     stage('CURL') {
       steps {
@@ -37,6 +31,8 @@ pipeline {
        echo 'Build SUCCESasasdS'
        echo 'SEND REQUEST !'
        bat 'curl -X GET https://jsonplaceholder.typicode.com/todos/1'
+       bat 'npm run start'
+       echo 'APP RUNS'
      }
    }
   
