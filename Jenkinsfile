@@ -8,7 +8,7 @@ pipeline {
         
     stage('Cloning Git') {
       steps {
-         git branch: 'main', 'https://github.com/Akifcan/jenkins-test'
+         git branch: 'main', url: 'https://github.com/Akifcan/jenkins-test'
       }
     }
         
