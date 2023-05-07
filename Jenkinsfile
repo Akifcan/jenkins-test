@@ -8,7 +8,7 @@ pipeline {
         
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/Akifcan/node-todo-frontend'
+        git 'https://github.com/Akifcan/jenkins-test'
       }
     }
         
