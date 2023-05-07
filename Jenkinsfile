@@ -8,7 +8,7 @@ pipeline {
         
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/Akifcan/jenkins-test'
+         git branch: 'main', git 'https://github.com/Akifcan/jenkins-test'
       }
     }
         
@@ -18,7 +18,7 @@ pipeline {
       }
     }
      
-    stage('Test') {
+    stage('Run') {
       steps {
          bat 'npm run start'
       }
